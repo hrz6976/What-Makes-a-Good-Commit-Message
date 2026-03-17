@@ -1,0 +1,23 @@
+[project]
+name = "whatgoodcm"
+version = "0.1.0"
+description = "Reproducible environment for the What Makes a Good Commit Message experiments"
+requires-python = ">=3.9,<3.10"
+dependencies = [
+    "numpy<2",
+    "pandas>=1.5,<2.4",
+    "scikit-learn>=1.1,<1.7",
+    "imbalanced-learn>=0.9,<0.13",
+    "torch @ https://download.pytorch.org/whl/cu116/torch-1.12.1%2Bcu116-cp39-cp39-linux_x86_64.whl",
+    "transformers==4.20.1",
+    "allennlp==2.10.1",
+    "allennlp-models==2.10.1",
+    "en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.3.0/en_core_web_sm-3.3.0-py3-none-any.whl",
+    "spacy==3.3.3",
+    "typing-extensions==4.5.0",
+    "setuptools<81",
+    "sentencepiece>=0.1.96,<0.3",
+]
+
+[tool.uv]
+package = false
